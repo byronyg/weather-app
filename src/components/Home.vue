@@ -1,13 +1,6 @@
 <template>
   <div id="app">
     <img :src="imageUrl" alt="" />
-    <div class="nav">
-      <!-- <ul>
-        <li>WeatherApp</li>
-        <li>About</li>
-      </ul> -->
-      <p>WeatherApp</p>
-    </div>
   </div>
 </template>
 
@@ -20,7 +13,7 @@ export default {
     this.searchPhoto();
   },
   data: () => ({
-    query: "yellow",
+    query: "weather",
     dataLoading: false,
     unsplashData: null,
   }),
