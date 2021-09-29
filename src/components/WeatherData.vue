@@ -1,6 +1,5 @@
 <template>
   <div class="overlay content">
-    <div class="location"></div>
     <div class="weather-data">
       <div class="weatherdata-wrapper">
         <img class="weather-icon" src="../assets/fog.svg" alt="" />
@@ -13,6 +12,30 @@
           <img class="small-icon" src="../assets/map.svg" alt="" /> Change
           location
         </p>
+      </div>
+    </div>
+    <div class="right-data">
+      <div class="right-content">
+        <div class="humidity">
+          <img class="right-icon" src="../assets/map.svg" alt="" />
+          <h4>Humidity</h4>
+          <h3>50%</h3>
+        </div>
+        <div class="air-pressure">
+          <img class="right-icon" src="../assets/map.svg" alt="" />
+          <h4>Air Pressure</h4>
+          <h3>50%</h3>
+        </div>
+        <div class="rain-chance">
+          <img class="right-icon" src="../assets/map.svg" alt="" />
+          <h4>Chance of Rain</h4>
+          <h3>50%</h3>
+        </div>
+        <div class="windspeed">
+          <img class="right-icon" src="../assets/map.svg" alt="" />
+          <h4>Wind Speed</h4>
+          <h3>50%</h3>
+        </div>
       </div>
     </div>
     <div class="hourlydata">
@@ -69,17 +92,13 @@ export default {
 </script>
 
 <style>
-/* .overlay {
-  height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(https://images.unsplash.com/photo-1482858683229-74280d78908b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5530707633478a5be10d25f09dacf9ef&auto=format&fit=crop&w=700&q=60);
-  background-size: cover;
-   background-position: top; 
-  position: relative;
-} */
 .content {
   color: #fff;
+}
+.weather-data {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .weatherdata-wrapper {
   position: relative;
@@ -101,6 +120,23 @@ export default {
 .kubwa {
   font-size: 65px;
   font-weight: 900;
+}
+.right-data {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.right-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.right-icon {
+  height: auto;
+  width: 20px;
+  position: relative;
+  justify-content: left;
+  display: flex;
 }
 .hourly {
   text-transform: uppercase;
