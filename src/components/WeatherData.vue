@@ -15,28 +15,28 @@
       </div>
     </div>
     <div class="right-data">
-      <div class="right-content">
-        <div class="humidity">
-          <img class="right-icon" src="../assets/map.svg" alt="" />
-          <h4>Humidity</h4>
-          <h3>50%</h3>
-        </div>
-        <div class="air-pressure">
-          <img class="right-icon" src="../assets/map.svg" alt="" />
-          <h4>Air Pressure</h4>
-          <h3>50%</h3>
-        </div>
-        <div class="rain-chance">
-          <img class="right-icon" src="../assets/map.svg" alt="" />
-          <h4>Chance of Rain</h4>
-          <h3>50%</h3>
-        </div>
-        <div class="windspeed">
-          <img class="right-icon" src="../assets/map.svg" alt="" />
-          <h4>Wind Speed</h4>
-          <h3>50%</h3>
-        </div>
+      <!-- <div class="right-content"> -->
+      <div class="humidity right-content">
+        <img class="right-icon" src="../assets/humidity.svg" alt="" />
+        <h4>Humidity</h4>
+        <h3>50%</h3>
       </div>
+      <div class="air-pressure right-content">
+        <img class="right-icon" src="../assets/pressure.svg" alt="" />
+        <h4>Air Pressure</h4>
+        <h3>1009.483 PS</h3>
+      </div>
+      <div class="rain-chance right-content">
+        <img class="right-icon" src="../assets/rain.svg" alt="" />
+        <h4>Chance of Rain</h4>
+        <h3>0%</h3>
+      </div>
+      <div class="windspeed right-content">
+        <img class="right-icon" src="../assets/wind.svg" alt="" />
+        <h4>Wind Speed</h4>
+        <h3>1.4km/h</h3>
+      </div>
+      <!-- </div> -->
     </div>
     <div class="hourlydata">
       <div class="data-row">
