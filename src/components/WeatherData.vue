@@ -125,12 +125,13 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
+  /* display: ; */
 }
-.right-content {
+/* .right-content {
   position: relative;
   display: flex;
   flex-direction: row;
-}
+} */
 .right-icon {
   height: auto;
   width: 20px;
