@@ -16,22 +16,23 @@
     </div>
     <div class="right-data">
       <!-- <div class="right-content"> -->
-      <div class="humidity right-content">
+      <div class="clust right-content">
         <img class="right-icon" src="../assets/humidity.svg" alt="" />
         <h4>Humidity</h4>
+        <br />
         <h3>50%</h3>
       </div>
-      <div class="air-pressure right-content">
+      <div class="clust right-content">
         <img class="right-icon" src="../assets/pressure.svg" alt="" />
         <h4>Air Pressure</h4>
         <h3>1009.483 PS</h3>
       </div>
-      <div class="rain-chance right-content">
+      <div class="clust right-content">
         <img class="right-icon" src="../assets/rain.svg" alt="" />
         <h4>Chance of Rain</h4>
         <h3>0%</h3>
       </div>
-      <div class="windspeed right-content">
+      <div class="clust right-content">
         <img class="right-icon" src="../assets/wind.svg" alt="" />
         <h4>Wind Speed</h4>
         <h3>1.4km/h</h3>
@@ -125,7 +126,17 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
+  /* border: 1px solid red; */
   /* display: ; */
+}
+.clust {
+  /* border: 1px solid red; */
+  display: flex;
+}
+.clust > h3 {
+  font-weight: 700;
+  font-size: 30px;
+  justify-self: right;
 }
 /* .right-content {
   position: relative;
@@ -134,10 +145,9 @@ export default {
 } */
 .right-icon {
   height: auto;
-  width: 20px;
-  position: relative;
-  justify-content: left;
-  display: flex;
+  width: 40px;
+  position: absolute;
+  justify-content: flex-start;
 }
 .hourly {
   text-transform: uppercase;
